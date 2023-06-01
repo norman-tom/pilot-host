@@ -1,0 +1,4 @@
+To cross compile the shared libraries for MQTT (Eclipse Paho) I have had to change the CMAKE files to refernce the correct 33bit binariers and install location. 
+The "C" and "CPP" folders hold the changes to the CMakeLists.txt files. These need to overwrite the ones from the Eclipse MQTT github page as those ones will install MQTT for the host machine.
+The 'root' CMakeLists.text file lives in the project root and the 'src' lives in the source directory. 
+Also see normcosystems githib page for instructures and build arguments.
